@@ -5,9 +5,15 @@ terraform {
       version = "~> 4.16"
     }
   }
-  required_version = ">= 1.2.0"
 }
 
+# Configure the AWS Provider
 provider "aws" {
-  region = var.aws_region
+  region     = "var.aws_region"
+  access_key = "AKIASJQYUW57ZGAXHE6F"
+  secret_key = "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"
 }
+
+
+
+
